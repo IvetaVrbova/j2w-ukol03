@@ -39,6 +39,20 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.vizitka--nova {
+    background-color: #FFFFFF66;
+    border: 3px dotted white;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover .vizitka {
+    box-shadow: 10px 10px 10px black;
+    transform: translate(-5px, -5px);
+    transition: box-shadow 0.2s, transform 0.2s;
 }
 
 .jmeno {
@@ -72,10 +86,44 @@ a {
     align-items: center;
 }
 
+.detail nav {
+    margin: 1em;
+    font-size: 150%;
+}
+
+.detail nav a {
+    color: white;
+}
+
+.detail nav a:hover {
+    text-decoration: underline;
+}
+
 .mapa {
     width: 36em;
     height: 36em;
     border: 1px solid gray;
     margin: 1em;
     box-shadow: 5px 5px 10px black;
+}
+
+.novaVizitka {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /*background-color: aliceblue;*/
+}
+
+.novaVizitka--form {
+    width: 600px;
+    background-color: #FFFFFF98;
+}
+
+.novaVizitka--form form {
+    padding: 40px;
+}
+
+.novaVizitka--form h1 {
+    padding: 20px 0 0 40px;
 }
